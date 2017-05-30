@@ -1,0 +1,9 @@
+!SESSION 2017-05-29 16:15:37.964 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2017-05-29 16:16:33.560
+!MESSAGE Setup tasks were performed during startup updating 12 preferences. See '/home/tdawson/eclipse-java/configuration/org.eclipse.oomph.setup/setup.log' for details

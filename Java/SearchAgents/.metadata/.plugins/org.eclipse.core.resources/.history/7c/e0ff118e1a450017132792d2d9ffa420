@@ -1,0 +1,14 @@
+package maze_solver;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		FileReader file = new FileReader(path);
+		file.parseFile();
+		
+		MazeSolver mazeSolver = new MazeSolver(file.getMap(), file.getStartPositionRow(), file.)
+		mazeSolver.findMazeExit();
+		
+	}
+}

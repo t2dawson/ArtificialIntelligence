@@ -1,0 +1,29 @@
+package maze_solver;
+
+public class MazeSolver {
+
+	private int [][] mazaMap;
+	private boolean [][] visited;
+	private int startPosCol;
+	private int startPosRow;
+	
+	public MazeSolver(int [][] mazeMap, int startPositionCol, int startPositionRow) {
+		
+		this.mazeMap = mazeMap;
+		this.visited = new boolean[mazeMap.length][mazeMap.length];
+		this.startPosCol = startPositionCol;
+		this.startPosRow = startPositionRow;
+		
+	}
+	
+	public void findMazeExit() {
+		
+		try {
+			
+			dfs(startPosRow, startPosCol+1);
+			System.out.println(");
+		}
+		
+	}
+	
+}

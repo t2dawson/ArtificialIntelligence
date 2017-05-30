@@ -1,0 +1,21 @@
+package maze_solver;
+import java.io.*;
+
+public class App {
+
+	public static void main(String[] args) {
+		String path = System.getProperty("user.dir") + "/maze.txt";
+		System.out.println(path);
+		try {
+		FileReader file = new FileReader(path,5,5);
+		} catch (FileNotFoundException e) {
+			System.out.println(path + " :File Not Found. Please Enter Valid filename");
+			System.exit(-1);
+		}
+		file.parseFile();
+		
+		MazeSolver mazeSolver = new MazeSolver(file.getMap(), file.getStartPosRow(), file.getStartPosCol());
+		mazeSolver.findMazeExit();
+		
+	}
+}
